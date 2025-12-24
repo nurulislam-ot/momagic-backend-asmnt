@@ -1,0 +1,10 @@
+@url=http://localhost:9000
+
+### GET /products
+GET {{url}}/products
+
+### GET /products/:id
+GET {{url}}/products/1
+
+### GET /products/category/:category
+GET {{url}}/products/category/electronics
