@@ -1,7 +1,9 @@
 {
-  "functions": {
-    "src/index.ts": {
-      "runtime": "edge"
+  "rewrites": [{ "source": "/(.*)", "destination": "/api" }],
+  "runtimes": {
+    "api/index.js": {
+      "use": "@vercel/bun@1.0.x",
+      "maxDuration": 10
     }
   }
 }
